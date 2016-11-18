@@ -22,7 +22,7 @@ go build
 Directories prefixed with 'webserver' are different projects testing how configure
 and use various go based web servers.
 
-##### webapp-caddy
+##### webserver-caddy
 
 [Caddy web server](https://caddyserver.com/)
 
