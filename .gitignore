@@ -25,3 +25,5 @@ _testmain.go
 
 config.json
 webapp-stdlib/webapp-stdlib
+webserver-caddy/log/access.log
+webserver-caddy/log/error.log

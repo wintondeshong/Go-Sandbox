@@ -1,0 +1,22 @@
+localhost:3000
+
+gzip
+websocket /echo cat
+ext    .html
+log    log/access.log
+proxy  /api 127.0.0.1:3000
+header /api Access-Control-Allow-Origin *
+
+basicauth "test user" password {
+       /
+}
+
+errors {
+       log log/error.log {
+             size 50 # rotates after 50MB
+             age  30 # keeps rotated files for 30 days
+             keep 5  # keep 5 log files
+       }
+       404 views/errors/404.html
+       500 views/errors/500.html
+}

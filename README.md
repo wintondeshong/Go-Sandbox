@@ -15,3 +15,17 @@ Web Application written using purely the Go Standard Library
 go build
 ./webapp-stdlib
 ```
+
+
+### webserver
+
+Directories prefixed with 'webserver' are different projects testing how configure
+and use various go based web servers.
+
+##### webapp-caddy
+
+[Caddy web server](https://caddyserver.com/)
+
+```
+caddy
+```
